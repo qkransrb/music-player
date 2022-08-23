@@ -21,6 +21,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/users", require("./routes/user"));
+app.use("/api/songs", require("./routes/song"));
 
 if (NODE_ENV === "production") {
   app.use(express.static(path.resolve(__dirname, process.env.STATIC_PATH)));

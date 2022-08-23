@@ -21,7 +21,7 @@ const DefaultLayout = ({ children }) => {
           ></i>
         </div>
       </header>
-      <div className="content">
+      <div className="content mt-10 px-10">
         <div>{children}</div>
       </div>
     </div>
